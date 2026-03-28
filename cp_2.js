@@ -57,3 +57,7 @@ function handleError(error) {
     const container = document.getElementById('product-container');
     container.innerHTML = '<p style="color: red; text-align: center;">Unable to load products.</p>';
 }
+
+//step 7
+fetchProductsThen();
+fetchProductsAsync();
