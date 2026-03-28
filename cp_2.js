@@ -36,6 +36,7 @@ function displayProducts(products) {
     const container = document.getElementById('product-container');
     // selects only the first 5 products
     const featuredProducts = products.slice(0, 5);
+    container.innerHTML = featuredProducts.map(product => {
     const { name, price, image } = product.fields;
     // finds data from the API
         const imgUrl = image[0].url;
@@ -49,7 +50,8 @@ function displayProducts(products) {
                 <p>${formattedPrice}</p>
             </div>
         `;
-    }.join('');
+    }).join('');
+}
 
 // step 6
 function handleError(error) {
