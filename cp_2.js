@@ -49,7 +49,7 @@ function displayProducts(products) {
                 <p>${formattedPrice}</p>
             </div>
         `;
-    }).join('');
+    }.join('');
 
 // step 6
 function handleError(error) {
