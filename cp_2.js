@@ -17,3 +17,16 @@ function fetchProductsThen() {
             console.error("FetchThen Error:", error);
         });
 }
+
+// step 4
+async function fetchProductsAsync() {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Failed to fetch products");
+        
+        const products = await response.json();
+        displayProducts(products);
+    } catch (error) {
+        handleError(error);
+    }
+}
