@@ -30,3 +30,23 @@ async function fetchProductsAsync() {
         handleError(error);
     }
 }
+
+// step 5
+function displayProducts(products) {
+    const container = document.getElementById('product-container');
+    // selects only the first 5 products
+    const featuredProducts = products.slice(0, 5);
+    const { name, price, image } = product.fields;
+    // finds data from the API
+        const imgUrl = image[0].url;
+    // formatting price
+        const formattedPrice = `$${(price / 100).toFixed(2)}`;
+
+        return `
+            <div class="product-card">
+                <img src="${imgUrl}" alt="${name}">
+                <h3>${name}</h3>
+                <p>${formattedPrice}</p>
+            </div>
+        `;
+    }).join('');
