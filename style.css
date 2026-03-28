@@ -17,17 +17,17 @@ header {
     margin: 0 auto;
 }
 
-/* Product Card Styling */
+
 .product-card {
     background: white;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    /* Step 8: Transition for smooth hover effects */
+  /* transition for hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Step 8: Hover Effect */
+/* step 8 hover effect */
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
