@@ -50,3 +50,10 @@ function displayProducts(products) {
             </div>
         `;
     }).join('');
+
+// step 6
+function handleError(error) {
+    console.log('An error has occured: ${error.message}');
+    const container = document.getElementById('product-container');
+    container.innerHTML = '<p style="color: red; text-align: center;">Unable to load products.</p>';
+}
